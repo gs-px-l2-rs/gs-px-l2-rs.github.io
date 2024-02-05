@@ -114,3 +114,6 @@ function submitProject(){
         alert("no project selected");
     }
 }
+function resetProject(){
+    window.history.replaceState(null, '', window.location.pathname);
+}
