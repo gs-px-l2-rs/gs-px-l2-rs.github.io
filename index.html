@@ -43,8 +43,48 @@
 </div>
 
 <div id="main_content">
-  <h3>Subnav/dropdown menu inside a Navigation Bar</h3>
-  <p>Hover over the 'about', "services" or "partners" link to see the sub navigation menu.</p>
+  <h3>Select your project below</h3>
+<form id="project-form">
+<table>
+  <tr>
+    <th>Project</th>
+    <th>Contact</th>
+    <th>Status</th>
+  </tr>
+  <tr>
+    <td><input type="checkbox" id="revops" name="project" value="Revenue Ops"><label for="vehicle1">Revenue Ops</label></td>
+    <td>Maria Anders</td>
+    <td>Open</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" id="csqls" name="project" value="Rebuild CSQLs"><label for="vehicle1">Rebuild CSQLs</label></td>
+    <td>Francisco Chang</td>
+    <td>Open</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" id="chatbot" name="project" value="Support Chatbot"><label for="vehicle1">Support Chatbot</label></td>
+    <td>Roland Mendel</td>
+    <td>Pending</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" id="devops" name="project" value="DevOps Audit"><label for="vehicle1">DevOps Audit</label></td>
+    <td>Helen Bennett</td>
+    <td>Cancelled</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" id="qbr" name="project" value="QBR Process Improvement"><label for="vehicle1">QBR Process Improvement</label></td>
+    <td>Yoshi Tannamuri</td>
+    <td>Pending</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" id="community" name="project" value="Launch Community"><label for="vehicle1">Launch Community</label></td>
+    <td>Giovanni Rovelli</td>
+    <td>Open</td>
+  </tr>
+</table>
+  <input type="submit" value="Submit" onclick="submitProject();">
+
+</form>
 </div>
 
 </body>

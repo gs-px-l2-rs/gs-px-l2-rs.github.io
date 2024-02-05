@@ -96,3 +96,21 @@ function showHint(){
     counter = 0;
     setTimeout(() => { window.location.href="login.html"; }, 500);
 }
+
+function submitProject(){
+    var checkedValue = null; 
+    var inputElements = document.getElementsByName('project');
+    for(var i=0; inputElements[i]; ++i){
+          if(inputElements[i].checked){
+               checkedValue = inputElements[i].value;
+               break;
+          }
+    }
+    if(checkedValue){
+        alert("Opening " + checkedValue + "...");
+        aptrinsic("track","Open Project",{"projectName":checkedValue});
+    }
+    else{
+        alert("no project selected");
+    }
+}
