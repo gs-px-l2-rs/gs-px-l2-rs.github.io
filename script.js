@@ -86,3 +86,13 @@ function showHint(){
     const hint = "pxuser<n>@example.com, px";
     alert(hint);
   }
+
+  function logout() {
+    var path = window.location.pathname;
+    var page = path.split("/").pop();
+    document.cookie = 'username=; Domain=.gs-px-l2-rs.github.io; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+    document.cookie = 'account=; Domain=.gs-px-l2-rs.github.io; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+    window.aptrinsic('reset');
+    counter = 0;
+    setTimeout(() => { window.location.href="login.html"; }, 500);
+}
