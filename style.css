@@ -78,3 +78,43 @@ body {
   #main_content{
     margin: 0px 3% 3% 3%;
   }
+
+  #login-form {
+    align-self: flex-start;
+    display: grid;
+    justify-items: left;
+    align-items: center;
+  }
+  .login-form-field {
+    border: none;
+    border-bottom: 1px solid #3a3a3a;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    outline: none;
+    padding: 0px 0px 5px 5px;
+  }
+  
+  #login-form-submit {
+    width: 145px;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    background-color: #3a3a3a;
+    cursor: pointer;
+    outline: none;
+  }
+ 
+  #hint-button{
+    width: 145px;
+    padding: 7px;
+    margin-top: 8px;
+    border: 1px dotted #3a3a3a;
+    border-radius: 5px;
+    color: #3a3a3a;
+    font-weight: bold;
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+  }
