@@ -2,14 +2,34 @@
 <html>
 <head>
 <script src="script.js"></script>
-<title>Product 2 | Home Page</title>
+<title>Product 2 | Design</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+  $( function() {
+      $( "#dragred").draggable({
+          stop : function r() {aptrinsic('track','Place Design Element',{"name":"Element 2"});}  
+      })
+    } );
+  
+  $( function() {
+      $( "#draggreen").draggable({
+          stop : function b() {aptrinsic('track','Place Design Element',{"name":"Element 1"});}       
+      })
+    } );
+  
+    $( function() {
+      $( "#dragpink").draggable({
+        stop : function b() {aptrinsic('track','Place Design Element',{"name":"Element 3"});}      
+      })
+    } );
+</script>
 </head>
 <body>
 
@@ -46,49 +66,23 @@
 </div>
 
 <div id="main_content">
-  <div id="projectheaderdiv"><h3 id="projectheader">Select your project below</h3><a href="" onclick="resetProject()">reset project</a></div>
-<form id="project-form">
-<table>
-  <tr>
-    <th>Project</th>
-    <th>Contact</th>
-    <th>Status</th>
-  </tr>
-  <tr>
-    <td><input type="checkbox" id="revops" name="project" value="Revenue Ops"><label for="vehicle1">Revenue Ops</label></td>
-    <td>Maria Anders</td>
-    <td>Open</td>
-  </tr>
-  <tr>
-    <td><input type="checkbox" id="csqls" name="project" value="Rebuild CSQLs"><label for="vehicle1">Rebuild CSQLs</label></td>
-    <td>Francisco Chang</td>
-    <td>Open</td>
-  </tr>
-  <tr>
-    <td><input type="checkbox" id="chatbot" name="project" value="Support Chatbot"><label for="vehicle1">Support Chatbot</label></td>
-    <td>Roland Mendel</td>
-    <td>Pending</td>
-  </tr>
-  <tr>
-    <td><input type="checkbox" id="devops" name="project" value="DevOps Audit"><label for="vehicle1">DevOps Audit</label></td>
-    <td>Helen Bennett</td>
-    <td>Cancelled</td>
-  </tr>
-  <tr>
-    <td><input type="checkbox" id="qbr" name="project" value="QBR Process Improvement"><label for="vehicle1">QBR Process Improvement</label></td>
-    <td>Yoshi Tannamuri</td>
-    <td>Pending</td>
-  </tr>
-  <tr>
-    <td><input type="checkbox" id="community" name="project" value="Launch Community"><label for="vehicle1">Launch Community</label></td>
-    <td>Giovanni Rovelli</td>
-    <td>Open</td>
-  </tr>
-</table>
-  <input type="submit" value="Submit" onclick="submitProject();">
+  <h3>Design Field</h3>
+  <div>
+    <div id="draggreen" class="ui-widget-content" style="background-color: rgb(26, 104, 26);">
+    <p>Element 1 (drag to place)</p>
+</div>
+<div id="dragred" class="ui-widget-content" style="background-color: rgb(37, 113, 206);">
+    <p>Element 2 (drag to place)</p>
+  </div>
+</div>
+<div id="dragpink" class="ui-widget-content" style="background-color: rgb(248, 184, 208);">
+    <p>Element 3 (drag to place)</p>
+  </div>
+</div>
+<a id="save-design-submit"><button>Save Project</button></a>
+<a href="build.html" id="reset-design-submit"><button>Build Project</button></a>
+<a href="" onclick="resetProject();return 0;" id="reset-design-submit"><button>Reset Project</button></a>
 
-
-</form>
 </div>
 
 </body>

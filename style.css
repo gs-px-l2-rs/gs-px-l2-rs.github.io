@@ -1,6 +1,10 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
   }
   
   .navbar {
@@ -18,7 +22,7 @@ body {
   }
   #logo{
     float: left;
-    height: 46px;
+    height: 49px;
   }
 
 #logo_link{
@@ -143,4 +147,42 @@ body {
   }
   #projectheader{
     display: inline;
+  }
+  #draggreen { width: 150px; height: 150px; padding: 0.5em; }
+
+  #dragred { width: 150px; height: 150px; padding: 0.5em; }
+  
+  #dragpink { width: 150px; height: 150px; padding: 0.5em; }
+
+  #save-design-submit {
+    width: 145px;
+    margin: 20% 0 0 3%;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  #reset-design-submit {
+    width: 145px;
+    margin: 20% 0 0 1%;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+  }
+  #test-button{
+    display: inline;
+    float: left;
+    margin: 180px 0 0 3%;
+  }
+  #test-div{
+    padding: 40px 0 0 0;
+  }
+
+  #deploy-button{
+    float: right;
+    margin: 178px 80% 0 0;
   }

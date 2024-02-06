@@ -2,7 +2,7 @@
 <html>
 <head>
 <script src="script.js"></script>
-<title>Product 2 | Home Page</title>
+<title>Product 2 | Design</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -46,49 +46,11 @@
 </div>
 
 <div id="main_content">
-  <div id="projectheaderdiv"><h3 id="projectheader">Select your project below</h3><a href="" onclick="resetProject()">reset project</a></div>
-<form id="project-form">
-<table>
-  <tr>
-    <th>Project</th>
-    <th>Contact</th>
-    <th>Status</th>
-  </tr>
-  <tr>
-    <td><input type="checkbox" id="revops" name="project" value="Revenue Ops"><label for="vehicle1">Revenue Ops</label></td>
-    <td>Maria Anders</td>
-    <td>Open</td>
-  </tr>
-  <tr>
-    <td><input type="checkbox" id="csqls" name="project" value="Rebuild CSQLs"><label for="vehicle1">Rebuild CSQLs</label></td>
-    <td>Francisco Chang</td>
-    <td>Open</td>
-  </tr>
-  <tr>
-    <td><input type="checkbox" id="chatbot" name="project" value="Support Chatbot"><label for="vehicle1">Support Chatbot</label></td>
-    <td>Roland Mendel</td>
-    <td>Pending</td>
-  </tr>
-  <tr>
-    <td><input type="checkbox" id="devops" name="project" value="DevOps Audit"><label for="vehicle1">DevOps Audit</label></td>
-    <td>Helen Bennett</td>
-    <td>Cancelled</td>
-  </tr>
-  <tr>
-    <td><input type="checkbox" id="qbr" name="project" value="QBR Process Improvement"><label for="vehicle1">QBR Process Improvement</label></td>
-    <td>Yoshi Tannamuri</td>
-    <td>Pending</td>
-  </tr>
-  <tr>
-    <td><input type="checkbox" id="community" name="project" value="Launch Community"><label for="vehicle1">Launch Community</label></td>
-    <td>Giovanni Rovelli</td>
-    <td>Open</td>
-  </tr>
-</table>
-  <input type="submit" value="Submit" onclick="submitProject();">
-
-
-</form>
+  <button onclick="runDeploy()" id="test-button">Deploy Project</button>
+  <div id="test-div" style="display: none">
+  <img src="img/deploying.gif" style="width: 6%;"><br>
+  Deploying project...
+</div> 
 </div>
 
 </body>

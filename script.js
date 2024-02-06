@@ -117,3 +117,40 @@ function submitProject(){
 function resetProject(){
     window.history.replaceState(null, '', window.location.pathname);
 }
+
+function resetProject(){
+    alert("project reset");
+}
+
+function submitBuild(){
+    const buildForm = document.getElementById("build-form");
+    const fName = buildForm.fname.value;
+    const lName = buildForm.lname.value;
+    const fullName = fName.concat(" ", lName);
+    const pid = buildForm.pid.value;
+    const duedate = buildForm.duedate.value;
+    alert("Thank you, "+fullName+". We're building project "+pid+". We'll have it ready by "+duedate+".");
+}
+
+function runTest() {
+    var x = document.getElementById("test-div");
+    var y = document.getElementById("deploy-button");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+      setTimeout(() => { x.style.display = "none";y.style.display = "block"; }, 5000);
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function runDeploy() {
+    var x = document.getElementById("test-div");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+      setTimeout(() => { x.style.display = "none"; alert("Congratulations! You're project has been deployed:]")}, 8000);
+    } else {
+      x.style.display = "none"; 
+}}
+function goDeploy(){
+    window.location.href="deploy.html";   
+}
