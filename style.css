@@ -11,6 +11,11 @@ body {
     overflow: hidden;
     background-color: #484848; 
   }
+
+  iframe {
+    width: 60%;
+    height: 450px;
+  }
   
   .navbar a {
     float: left;
@@ -165,6 +170,16 @@ body {
   }
   
   #reset-design-submit {
+    width: 145px;
+    margin: 20% 0 0 1%;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+  }
+
+  #build-design-submit {
     width: 145px;
     margin: 20% 0 0 1%;
     border: none;
