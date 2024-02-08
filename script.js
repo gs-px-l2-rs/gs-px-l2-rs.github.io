@@ -154,7 +154,7 @@ function runTest() {
     var x = document.getElementById("test-div");
     if (x.style.display === "none") {
       x.style.display = "block";
-      setTimeout(() => { x.style.display = "none"; alert("Congratulations! You're project has been deployed:]")}, 8000);
+      setTimeout(() => { x.style.display = "none"; alert("Congratulations! You're project has been deployed:]")}, 6000);
     } else {
       x.style.display = "none"; 
 }}
