@@ -1,16 +1,16 @@
 //GAINSIGHT PX Product Tag - disabled to use GTM
-/*   (function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
+  (function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
       (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
     var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
     var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
-  })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-3JBWPZMJAMBI-2"); */
+  })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-3JBWPZMJAMBI-2",{"iframeModeEnabled":true});
 
 //-- Google Tag Manager -->
-(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+/* (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-NJ9LZMBP');
+  })(window,document,'script','dataLayer','GTM-NJ9LZMBP'); */
 
 function login() {
     const loginForm = document.getElementById("login-form");
