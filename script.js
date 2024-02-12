@@ -136,7 +136,6 @@ function submitBuild(){
     const fullName = fName.concat(" ", lName);
     const pid = buildForm.pid.value;
     const duedate = buildForm.duedate.value;
-    alert("Unix due date is "+unixdue);
     aptrinsic('track','Submit Build Form',{"pid":pid,"name":fullName,"requested due date":duedate});
     alert("Thank you, "+fullName+". We're building project "+pid+". We'll have it ready by "+duedate+".");
 }
