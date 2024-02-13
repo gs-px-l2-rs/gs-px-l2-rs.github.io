@@ -162,3 +162,8 @@ function runTest() {
 function goDeploy(){
     window.location.href="deploy.html";   
 }
+function notifyMe(){
+    var x = document.getElementById("notifyMe").checked;
+    aptrinsic('set', 'user', {'notifyMe' : x});
+    aptrinsic('track', 'notifyMe', {'target state' : x});
+}
