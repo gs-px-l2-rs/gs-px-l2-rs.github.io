@@ -173,4 +173,6 @@ function sendFeedback(){
     const message=document.getElementById('description').value;
 // alert(type+" "+subject+" "+message);
 aptrinsic('send', 'feedback', {'category':type,'subject':subject,'description': message });
+setTimeout(() => { window.location.href="contact.html"; }, 500);
+alert("Thank you for submitting feedback. Someone from our team will be in touch shortly.");
 }
