@@ -264,3 +264,7 @@ body {
   .slider.round:before {
     border-radius: 50%;
   }
+
+  .feedback_form label{
+    font-weight: 600;
+  }

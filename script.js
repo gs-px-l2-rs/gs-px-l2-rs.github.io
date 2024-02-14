@@ -167,3 +167,10 @@ function notifyMe(){
     aptrinsic('set', 'user', {'notifyMe' : x});
     aptrinsic('track', 'notifyMe', {'target state' : x});
 }
+function sendFeedback(){
+    const type=document.getElementById('type').value;
+    const subject=document.getElementById('subject').value;
+    const message=document.getElementById('description').value;
+// alert(type+" "+subject+" "+message);
+aptrinsic('send', 'feedback', { 'category':  type,'subject': subject, 'description': message });
+}
