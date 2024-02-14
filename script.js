@@ -172,5 +172,5 @@ function sendFeedback(){
     const subject=document.getElementById('subject').value;
     const message=document.getElementById('description').value;
 // alert(type+" "+subject+" "+message);
-aptrinsic('send', 'feedback', { 'category':  type,'subject': subject, 'description': message });
+aptrinsic('send', 'feedback', {'category':type,'subject':subject,'description': message });
 }
