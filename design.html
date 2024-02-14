@@ -20,7 +20,7 @@
   
   $( function() {
       $( "#draggreen").draggable({
-          stop : function b() {aptrinsic('track','Place Design Element',{"name":"Element 1"});}       
+          stop : function b() {aptrinsic('track','Place Design Element',{"name":"Element 1","style":document.getElementById('draggreen').attributes.style.value});}
       })
     } );
   
