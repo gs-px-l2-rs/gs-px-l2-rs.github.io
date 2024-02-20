@@ -21,7 +21,7 @@ body {
     height: 450px;
   }
   iframe[src^="https://www.youtube.com"] {
-    width: inherit;
+    width: 100%;
   }
   .navbar a {
     float: left;
