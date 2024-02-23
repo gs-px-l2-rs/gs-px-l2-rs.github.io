@@ -34,7 +34,8 @@ function login() {
         {
         //User Fields
             "id": userId, // Required for logged in app users
-            "email": uEmail
+            "email": uEmail,
+            "lang":"fr-FR"
         },
         {
         //Account Fields
@@ -48,7 +49,8 @@ function login() {
         {
         //User Fields
             "id": userId, // Required for logged in app users
-            "email": uEmail
+            "email": uEmail,
+            "lang":"ru-RU"
         },
         {
         //Account Fields
