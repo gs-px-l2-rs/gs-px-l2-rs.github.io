@@ -85,6 +85,58 @@ function login() {
             "name":acctName.acct4
         });
         setTimeout(() => { window.location.href="index.html"; }, 1000);
+    } else if (uEmail === "pxuser5@example.com" && uPassword === "px") {
+        aptrinsic("identify",
+        {
+        //User Fields
+            "id": userId, // Required for logged in app users
+            "email": uEmail
+        },
+        {
+        //Account Fields
+            "id":acctId.acct1, //Required
+            "name":acctName.acct1
+        });
+        setTimeout(() => { window.location.href="index.html"; }, 1000);
+    } else if (uEmail === "pxuser6@example.com" && uPassword === "px") {
+        aptrinsic("identify",
+        {
+        //User Fields
+            "id": userId, // Required for logged in app users
+            "email": uEmail
+        },
+        {
+        //Account Fields
+            "id":acctId.acct2, //Required
+            "name":acctName.acct2
+        });
+        setTimeout(() => { window.location.href="index.html"; }, 1000);
+    } else if (uEmail === "pxuser7@example.com" && uPassword === "px") {
+        aptrinsic("identify",
+        {
+        //User Fields
+            "id": userId, // Required for logged in app users
+            "email": uEmail
+        },
+        {
+        //Account Fields
+            "id":acctId.acct3, //Required
+            "name":acctName.acct3
+        });
+        setTimeout(() => { window.location.href="index.html"; }, 1000);
+    } else if (uEmail === "pxuser8@example.com" && uPassword === "px") {
+        aptrinsic("identify",
+        {
+        //User Fields
+            "id": userId, // Required for logged in app users
+            "email": uEmail
+        },
+        {
+        //Account Fields
+            "id":acctId.acct3, //Required
+            "name":acctName.acct3
+        });
+        setTimeout(() => { window.location.href="index.html"; }, 1000);
     } 
     else {
         alert('Invalid username or password');
