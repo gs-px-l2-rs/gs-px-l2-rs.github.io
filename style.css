@@ -6,7 +6,10 @@ body {
   font-weight: 300;
   font-style: normal;
   }
-  
+  a {
+    text-decoration: none;
+    color: rgb(0, 102, 153);
+  }
   .navbar {
     overflow: hidden;
     background-color: #484848; 
