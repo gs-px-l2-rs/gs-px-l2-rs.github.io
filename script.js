@@ -14,9 +14,10 @@
 
 function login() {
     const loginForm = document.getElementById("login-form");
-    const uEmail = loginForm.username.value;
+    const uName = loginForm.username.value;
+    const uEmail=concat('p2_',uName);
     const uPassword = loginForm.password.value;
-    const userId = md5(uEmail);
+    const userId = md5(uName);
     const acctName = {
         acct1: "Slice Tech",
         acct2: "NazDeck",
@@ -29,7 +30,7 @@ function login() {
         acct3: "bct3528fjf",
         acct4: "kfr8395ifn"
     }
-    if (uEmail === "pxuser1@example.com" && uPassword === "px") {
+    if (uName === "pxuser1@example.com" && uPassword === "px") {
         aptrinsic("identify",
         {
         //User Fields
@@ -44,7 +45,7 @@ function login() {
         });
         setTimeout(() => { window.location.href="index.html"; }, 1000);
     }
-    else if (uEmail === "pxuser2@example.com" && uPassword === "px") {
+    else if (uName === "pxuser2@example.com" && uPassword === "px") {
         aptrinsic("identify",
         {
         //User Fields
@@ -59,7 +60,7 @@ function login() {
         });
         setTimeout(() => { window.location.href="index.html"; }, 1000);
     }
-    else if (uEmail === "pxuser3@example.com" && uPassword === "px") {
+    else if (uName === "pxuser3@example.com" && uPassword === "px") {
         aptrinsic("identify",
         {
         //User Fields
@@ -72,7 +73,7 @@ function login() {
             "name":acctName.acct3
         });
         setTimeout(() => { window.location.href="index.html"; }, 1000);
-    }else if (uEmail === "pxuser4@example.com" && uPassword === "px") {
+    }else if (uName === "pxuser4@example.com" && uPassword === "px") {
         aptrinsic("identify",
         {
         //User Fields
@@ -85,7 +86,7 @@ function login() {
             "name":acctName.acct4
         });
         setTimeout(() => { window.location.href="index.html"; }, 1000);
-    } else if (uEmail === "pxuser5@example.com" && uPassword === "px") {
+    } else if (uName === "pxuser5@example.com" && uPassword === "px") {
         aptrinsic("identify",
         {
         //User Fields
@@ -98,7 +99,7 @@ function login() {
             "name":acctName.acct1
         });
         setTimeout(() => { window.location.href="index.html"; }, 1000);
-    } else if (uEmail === "pxuser6@example.com" && uPassword === "px") {
+    } else if (uName === "pxuser6@example.com" && uPassword === "px") {
         aptrinsic("identify",
         {
         //User Fields
@@ -111,7 +112,7 @@ function login() {
             "name":acctName.acct2
         });
         setTimeout(() => { window.location.href="index.html"; }, 1000);
-    } else if (uEmail === "pxuser7@example.com" && uPassword === "px") {
+    } else if (uName === "pxuser7@example.com" && uPassword === "px") {
         aptrinsic("identify",
         {
         //User Fields
@@ -124,7 +125,7 @@ function login() {
             "name":acctName.acct3
         });
         setTimeout(() => { window.location.href="index.html"; }, 1000);
-    } else if (uEmail === "pxuser8@example.com" && uPassword === "px") {
+    } else if (uName === "pxuser8@example.com" && uPassword === "px") {
         aptrinsic("identify",
         {
         //User Fields
