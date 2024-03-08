@@ -15,7 +15,8 @@
 function login() {
     const loginForm = document.getElementById("login-form");
     const uName = loginForm.username.value;
-    const uEmail=concat('p2_',uName);
+    const prefix = "p2_";
+    const uEmail=prefix.concat(uName);
     const uPassword = loginForm.password.value;
     const userId = md5(uName);
     const acctName = {
