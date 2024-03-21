@@ -273,3 +273,7 @@ body {
   .feedback_form label{
     font-weight: 600;
   }
+
+  .apt-widget-body{
+    font-family: 'Times New Roman', Times, serif;
+  }
