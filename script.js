@@ -31,6 +31,7 @@ function login() {
         acct3: "bct3528fjf",
         acct4: "kfr8395ifn"
     }
+
     if (uName === "pxuser1@example.com" && uPassword === "px") {
         aptrinsic("identify",
         {
@@ -44,6 +45,7 @@ function login() {
             "id":acctId.acct1, //Required
             "name":acctName.acct1
         });
+
         setTimeout(() => { window.location.href="index.html"; }, 1000);
     }
     else if (uName === "pxuser2@example.com" && uPassword === "px") {
