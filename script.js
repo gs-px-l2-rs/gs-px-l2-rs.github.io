@@ -3,7 +3,7 @@
       (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
     var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
     var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
-  })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-3JBWPZMJAMBI-2",{"iframeModeEnabled":true, "allowCrossDomain":true}); 
+  })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-3JBWPZMJAMBI-2",{"allowCrossDomain":true}); 
 
 //-- Google Tag Manager -->
 /* (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -234,3 +234,4 @@ aptrinsic('send', 'feedback', {'category':type,'subject':subject,'description': 
 setTimeout(() => { window.location.href="contact.html"; }, 500);
 alert("Thank you for submitting feedback. Someone from our team will be in touch shortly.");
 }
+//aptrinsic("identify",{"id": "unique-user-id"},{"id":"IBM"});
