@@ -12,8 +12,14 @@
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-NJ9LZMBP');*/
 
-  var customer = "Software Solutions LLC";
-  var custEnv = "staging";
+
+  const customers = ["Software Solutions LLC", "UVN", "World Wide Things", "Giggle"];
+  const random = Math.floor(Math.random() * customers.length);
+  var customer = customers[random];
+
+  const envs = ["staging", "integration", "qa", "production"];
+  const random2 = Math.floor(Math.random() * envs.length);
+  var custEnv = envs[random];
 
 function login() {
     const loginForm = document.getElementById("login-form");
