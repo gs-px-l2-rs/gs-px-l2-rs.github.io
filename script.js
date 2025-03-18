@@ -12,6 +12,9 @@
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-NJ9LZMBP');*/
 
+  var customer = "Software Solutions LLC";
+  var custEnv = "staging";
+
 function login() {
     const loginForm = document.getElementById("login-form");
     const uName = loginForm.username.value;
@@ -235,3 +238,7 @@ setTimeout(() => { window.location.href="contact.html"; }, 500);
 alert("Thank you for submitting feedback. Someone from our team will be in touch shortly.");
 }
 //aptrinsic("identify",{"id": "unique-user-id"},{"id":"IBM"});
+
+function setGlobalContext(){
+    aptrinsic('set', 'globalContext', {"customer":customer, "customer environment":custEnv});
+}
